@@ -13,27 +13,20 @@ int main()
     printf("Please Enter the Third Number: ");
     scanf("%f", &c);
 
-    printf("The Entered three values are: a = %.2f, b = %.2f, c = %.2f", a, b, c);
+    printf("The Entered three values are: a = %.2f, b = %.2f, c = %.2f\n", a, b, c);
 
-    if (a>b)
+    if (a >= b && a >= c)
     {
-        printf("\nThe Biggest number is: a = %.2f", a);
+        printf("The Biggest number is: a = %.2f\n", a);
     }
-
-    if (b>c)
+    else if (b >= a && b >= c)
     {
-        printf("\nThe biggest number is: b = %.2f", b);
+        printf("The Biggest number is: b = %.2f\n", b);
     }
-
-    if (c>a)
+    else
     {
-        printf("\nThe Biggest number is: c = %.2f", c);
-
-        return 0;
+        printf("The Biggest number is: c = %.2f\n", c);
     }
-    
-    
-    
 
     return 0;
 }
